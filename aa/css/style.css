@@ -1,0 +1,759 @@
+/* ========================== font family start ================ */
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Yellowtail&display=swap');
+
+
+/* -------------------------- font family end ------------------- */
+/* ========================== common css start ================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.container {
+    width: 1325px;
+    margin: 0 auto;
+}
+
+/* -------------------------- common css end -------------------- */
+/* ========================== common css start ================== */
+.common_head_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.common_head {
+    position: relative;
+}
+
+.common_head h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Yellowtail', cursive;
+    color: #49C4F5;
+}
+
+.common_head h3 {
+    width: 595px;
+    font-size: 54px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #222222;
+    margin-bottom: 68px;
+}
+
+.common_head::after {
+    content: '';
+    width: 83px;
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+}
+
+.common_head_text {
+    width: 622px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff;
+    margin-top: 67px;
+}
+ 
+/* -------------------------- common css end -------------------- */
+/* ========================== menu css start ================== */
+#main_menu {
+    width: 100%;
+    position: absolute;
+    padding-top: 20px;
+}
+
+.main_menu_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_menu_row .menu_col_img img {
+    width: 225px;
+}
+
+.main_menu_row .menu_col_text ul {
+    display: flex;
+    gap: 55px;
+}
+
+.main_menu_row .menu_col_text ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #F6F0F0;
+    transition: all linear 0.3s;
+}
+
+.main_menu_row .menu_col_text ul li a:hover {
+    color: #FF9600;
+}
+
+.main_menu_row .menu_col_bottom a {
+    width: 200px;
+    height: 64px;
+    background: #FF9600;
+    border: 1px solid #FF9600;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 64px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #Ffffff;
+    transition: all linear 0.3s;
+}
+
+.main_menu_row .menu_col_bottom a:hover {
+    background: transparent;
+    color: #FF9600;
+    transform: scale(1.3);
+}
+
+/* -------------------------- menu css end -------------------- */
+/* ========================== banner css start ================== */
+#banner {
+    background: url(../images/bannerbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.banner_text h1 {
+    width: 819px;
+    font-size: 72px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #Ffffff;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 240px;
+}
+
+.banner_bottom {
+    display: flex;
+    justify-content: center;
+    gap: 57px;
+    padding-top: 48px;
+    padding-bottom: 250px;
+}
+
+.banner_bottom .banner_bottom_one {
+    width: 231px;
+    height: 62px;
+    background: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 62px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000000;
+    transition: all linear 0.3s;
+}
+
+.banner_bottom .banner_bottom_one:hover {
+    color: #Ffffff;
+    background: #FF9600
+}
+
+.banner_bottom .banner_bottom_two {
+    width: 185px;
+    height: 62px;
+    background: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 62px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000000;
+    transition: all linear 0.3s;
+}
+
+.banner_bottom .banner_bottom_two:hover {
+    color: #Ffffff;
+    background: #FF9600
+}
+
+/* -------------------------- banner css end -------------------- */
+/* ========================== adventures css start ================== */
+#adventure {
+    padding-top: 105px;
+    padding-bottom: 69px;
+}
+
+.adventure_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventure_text_col {
+    width: 595px;
+}
+
+.adventure_text .adventure_text_p1 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000000;
+    margin-bottom: 36px;
+}
+
+.adventure_text ul li p {
+    display: flex;
+    gap: 12px;
+}
+
+.adventure_text ul li p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000000;
+    margin-bottom: 23px;
+}
+
+.adventure_text ul li p span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #c4c4c4;
+}
+
+.adventure_bottom a {
+    width: 200px;
+    height: 62px;
+    background: #FF9600;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 62px;
+    margin-top: 27px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff;
+    transition: all linear 0.3s;
+}
+
+.adventure_bottom a:hover {
+    color: #FF9600;
+    background: black;
+}
+
+.adventure_img_col {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+}
+
+.adventure_img_col .adventure_img_one {
+    width: 300px;
+}
+
+.adventure_img_col .adventure_img_two {
+    width: 295px;
+}
+
+.counter_row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.counter_row .counter_col {
+    width: 312px;
+    height: 150px;
+    background: #FFF4E5;
+    text-align: center;
+    padding: 0 63px 23px 63px;
+}
+
+.counter_row .counter_col h4 {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000000;
+}
+
+.counter_row .counter_col p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000000;
+}
+
+.counter_row .counter_col_two {
+    background: #E7FDE9;
+}
+
+.counter_row .counter_col_three {
+    background: #F2F2FD;
+}
+
+.counter_row .counter_col_four {
+    background: #FFF4E5;
+}
+
+/* -------------------------- adventures css end -------------------- */
+/* ========================== activities css start ================== */
+#activities {
+    background: #0C3543;
+    padding-top: 136px;
+}
+
+.common_head_row .common_head h2 {
+    color: #FF960B;
+}
+
+.common_head_row .common_head h3 {
+    color: #ffffff;
+}
+
+.common_head_row .common_head::after {
+    background: #c4c4c4;
+    bottom: 46px;
+}
+
+.activities_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.activities_row .activities_col {
+    width: 424px;
+    background: #0F4152;
+    border-radius: 15px;
+    padding-bottom: 45px;
+    text-align: center;
+
+}
+
+.activities_col .activities_text h4 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    margin-top: 37px;
+    margin-bottom: 15px;
+    transition: all linear 0.3s;
+}
+
+.activities_col .activities_text p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+.activities_row .activities_col:hover h4 {
+    color: #FF9600;
+}
+
+.activities_botoom img {
+    margin-top: 117px;
+}
+
+/* -------------------------- activities css end -------------------- */
+/* ========================== join css start ================== */
+#join_part {
+    width: 100%;
+    height: 981px;
+    background: #FF9600;
+    padding-top: 20px;
+}
+
+.join_head {
+    text-align: center;
+}
+
+.join_head .join_logo img {
+    width: 104px;
+}
+
+.join_head .join_text h2 {
+    font-size: 54px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 29px;
+    margin-bottom: 51px;
+}
+
+.join_head .join_text p {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.join_bottom {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 96px;
+}
+
+.join_bottom .join_bottom_one {
+    width: 200px;
+    height: 65px;
+    background: #0C3543;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff;
+    transition: all linear 0.3s;
+}
+
+.join_bottom .join_bottom_one:hover {
+    color: #0C3543;
+    background: #ffffff;
+}
+
+.join_bottom .join_bottom_two {
+    width: 240px;
+    height: 65px;
+    background: #0C3543;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff;
+    transition: all linear 0.3s;
+}
+
+.join_bottom .join_bottom_two:hover {
+    color: #0C3543;
+    background: #ffffff;
+}
+
+.join_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.join_row .join_col {
+    width: 395px;
+    background: url(../images/test1.png);
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 223px 57px 23px 53px;
+}
+
+.join_col .join_text {
+    position: relative;
+}
+
+.join_row .join_col .join_text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff;
+}
+
+.join_row .join_col .join_text p {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff;
+    margin-top: 27px;
+    margin-bottom: 68px;
+}
+
+.join_col .join_text::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #c4c4c4;
+    position: absolute;
+    bottom: -38px;
+    left: 0;
+}
+
+.join_footer p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #A0A0A0;
+}
+
+.join_row .join_col_2 {
+    background: url(../images/test2.png);
+    background-repeat: no-repeat;
+}
+
+.join_row .join_col_3 {
+    background: url(../images/test3.png);
+    background-repeat: no-repeat;
+}
+
+/* -------------------------- join css end -------------------- */
+/* ========================== choose css start ================== */
+#choose_part {
+    padding: 225px 0;
+}
+.choose_head{
+    text-align: center;
+    position: relative;
+}
+.choose_head h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Yellowtail', cursive;
+    color: #14B9F1;
+}
+.choose_head h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000;
+    margin-top: 29px;
+    margin-bottom: 81px;
+}
+.choose_head::after{
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: #A0A0A0;
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.choose_row{
+    display: flex;
+    justify-content: space-between;
+}
+.choose_col{
+    width: 275px;
+    text-align: center;
+}
+.choose_col .choose_logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    text-align: center;
+    line-height: 150px;
+    margin: 0 auto;
+}
+.choose_col .choose_logo p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+}
+.choose_text h4{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.choose_text p{ 
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000;
+    text-align: center;
+}
+/* -------------------------- choose css end -------------------- */
+/* ========================== news css start ================== */
+#news_part .common_head_row .common_head h2{
+    color: #FF9600;
+}
+#news_part .common_head_row .common_head h3{
+    color: #000;
+}
+#news_part .common_head::after{
+    background: #A0A0A0;
+}
+#news_part .common_head_row .common_head_text p{
+    color: #000;
+}
+.news_row{
+    display: flex;
+    justify-content: space-between;
+}
+.news_row .news_col{
+    width: 424px;
+    text-align: center;
+    margin-top: 55px;
+}
+.news_col .news_text{
+    position: relative;
+}
+.news_col .news_text h4{
+    width: 315px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000;
+    margin: 0 auto;
+    margin-top: 38px;
+    margin-bottom: 32px;
+}
+.news_col .news_text p{
+    width: 312px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #000; 
+    margin: 0 auto;
+    margin-bottom: 86px;
+}
+.news_col .news_text::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: -42px;
+    left: 0;
+}
+.news_footer a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #FF9600; 
+    transition: all linear 0.3s;
+}
+.news_col:hover a{
+    color: #14B9F1;
+}
+/* -------------------------- news css end -------------------- */
+/* ========================== logo css start ================== */
+#logo_part{
+    padding-top: 265px;
+    padding-bottom: 35px;
+}
+.logo_row{
+    display: flex;
+    justify-content: space-between;
+}
+.logo_row .logo_col img{
+    width: 161px;
+}
+/* -------------------------- logo css end -------------------- */
+/* ========================== footer css start ================== */
+.footer_row{
+    background: #0C3543;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_col_img img{
+    width: 800px;
+}
+.footer_col_text{ 
+    padding: 80px 91px 119px 44px;
+}
+.footer_col_text .footer_logo img{
+    width: 252px;
+}
+.footer_text_row{
+    display: flex;
+    gap: 33px;
+    margin-top: 80px;
+    margin-bottom: 127px;
+    position: relative;
+}
+.footer_bottom a{
+    width: 130px;
+    height: 60px;
+    background: #FF9600;
+    text-align: center;
+    padding: 10px 28px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff;
+    transition: all linear 0.3s; 
+}
+.footer_bottom a:hover{
+    color: #FF9600;
+    background: #ffffff;
+}
+.footer_text p{
+    width: 373px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff; 
+}
+.footer_text_row::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #c4c4c4;
+    position: absolute;
+    bottom: -52px;
+    left: 0;
+}
+.contact_row{
+    display: flex;
+    gap: 30px;
+}
+.contact_head h6{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff; 
+}
+.contact_text ul li a{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff; 
+    margin-bottom: 32px;
+}
+.copyright p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ffffff; 
+    margin-top: 30px; 
+}
+/* -------------------------- footer css end -------------------- */ 
